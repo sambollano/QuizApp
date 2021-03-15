@@ -70,8 +70,20 @@ choices.addEventListener("click", e => {
     acceptingAnswers = false;
     const selectedChoices = e.target;
     const selectedAnswers = selectedChoices.dataset["number"];
-    console.log(selectedAnswers);
+    
+    const classToApply = 'incorrect';
+    if (selectedAnswers == currentQuestion.answer) {
+        classToApply = 'currect';
+    }
+    
+    const classToApply = selectedAnswers === currentQuestion.answer ? 'currect': 'incorrect';
+    console.log(classToApply);
+
+    selectedChoices.parentElement.classList.add(classToApply);
+    setTimeout( () => { 
+    selectedChoices.parentElement.classList.remove(classToApply);
     getNewQueston();
+    }, 1000);
 });
 
 startGame();

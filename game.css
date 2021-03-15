@@ -21,3 +21,9 @@
     padding: 1.5rem;
     width: 100%;
 }
+.currect {
+    background-color: royalblue;
+}
+.incorrect {
+    background-color: red;
+}
