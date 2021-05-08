@@ -72,14 +72,6 @@ function starQuiz() {
   if (storedScores !== null) {
     allScores = storedScores;
   }
-
-  getNewQueston = () => {
-    if (availableQuestions.length === 0) {
-      //GO TO END page
-      return window.location.assign("/end.html");
-    }
-  };
-
     acceptingAnswers = false;
     const selectedChoices = e.target;
     const selectedAnswers = selectedChoices.dataset["number"];
