@@ -6,7 +6,22 @@ var btnStart = document.getElementById("btn-start");
 var timecounter = document.getElementById("timecounter");
 var titleitem = document.getElementById("title-item");
 var nextQuestions;
-
+let input = document.querySelector(".input")
+let button = document.querySelector(".button")
+ 
+button.disabled = true
+ 
+input.addEventListener("change", swapState)
+ 
+function swapState() 
+{
+  if (document.querySelector(".input").value === "") 
+  {
+    button.disabled = true
+  } else {
+    button.disabled = false
+  }
+}
 let currentQuestion = {};
 let acceptingAnswers = true;
 let score = 4;
