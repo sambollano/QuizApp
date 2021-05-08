@@ -1,16 +1,15 @@
 # QuizApp
 Web APIs Challenge
 
-Purpose:
+## Purpose
 We Are Making a QuizApp.
 
-Codes Used: 
-.CSS
-.HTML
-.Javascript
-.Bootstrap
-
-Contribution:
+## Built With
+* HTML
+* CSS
+*Javascript
+*Bootstrap
+## Contribution
 Made with ❤️ by Samantha Arellano
 
-©2020 by QuizApp
+### ©️2021 QuizApp
